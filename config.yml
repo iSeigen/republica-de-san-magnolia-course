@@ -1,0 +1,16 @@
+title: República de San Magnolia
+description: San Magnolia
+template:
+  repo: republica-de-san-magnolia-template
+  name: republica-de-san-magnolia
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
